@@ -55,20 +55,22 @@
 <body>
   <main>
     <h1>Privacy Notice</h1>
-    <p class="muted">Last updated: 2026-04-23</p>
+    <p class="muted">Last updated: 2026-06-29</p>
 
     <p>We do not collect personal data and we do not use advertising.</p>
     <p>Anonymous technical statistics help us improve app quality and reliability.</p>
-
     <h2>What we collect</h2>
     <ul>
       <li>Crash reports (Firebase Crashlytics), such as stack traces and basic device/app version info.</li>
-      <li>Anonymous usage events needed to improve onboarding:
+      <li>Anonymous Firebase Analytics events, including:
         <ul>
-          <li>whether notifications are enabled</li>
           <li>whether the app is opened</li>
+          <li>whether the notification permission prompt was shown</li>
+          <li>whether notification permission was granted or denied</li>
+          <li>whether the background step-counting service auto-started (after device boot, app update, or app open) and whether it succeeded</li>
         </ul>
       </li>
+      <li>Standard technical metadata sent by Firebase/Google as part of analytics and crash reporting (for example app version, device model, OS version, and an anonymous installation identifier). We do not collect advertising IDs.</li>
     </ul>
 
     <h2>What we do not collect</h2>
